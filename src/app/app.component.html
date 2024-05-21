@@ -1,0 +1,78 @@
+<!--<img src= "../assets/Spotify-Logo.png" alt = "Spotify LOGO" class="center"/>-->
+<div class="topmargin">
+  <script src="login.js"></script>
+  <div class="titlebox">
+    <a>{{title}}</a>
+  </div>
+  <!--Will show if logged out-->
+  <div class="loginbox">
+
+    <a href="/login"> Login</a>
+
+  </div>
+  <!--Will show if logged in-->
+  <div class="userbox" *ngIf="showStuff.search||showStuff.playlist">
+    <a>Signed in as {{profileUsername}} </a>
+    <a (click)="logout()">Log out</a>
+  </div>
+</div>
+
+
+<div *ngIf="showStuff.search||showStuff.playlist">
+  <div class="sidebar">
+    <div class="menuview">
+      <div class="list scrollable">
+        <b>Recommendations</b>
+        <ul class="menuitems">
+          <li>Some Popular Song</li>
+        </ul>
+        <b>Recently Played</b>
+        <ul class="menuitems">
+          <li>List of Songs you Played recently</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div *ngIf="showStuff.search">
+  <div class = "padding">
+    <div>
+      <img class="logo" src="/assets/vybify.png" alt="Vybify Logo">
+    </div>
+
+    <div class="searchbox">
+      <input id="mood" type="text" [(ngModel)] ="song" ng-change="searchSong()" (keyup) = "searchSong()" placeholder="Likey by TWICE" />
+    </div>
+
+    <div class="selectbox">
+        <select [(ngModel)] = "selectedSong">
+          <option [ngValue]="null">Select Song</option>
+          <option *ngFor="let i of songNames">{{i}}</option>
+        </select>
+    </div>
+
+    <div class= "buttonbox">
+      <button id="submit" class = "button" (click)="generatePlaylist()">Vybe it up!</button>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="showStuff.playlist&&!showStuff.search">
+  <div class="spotify">
+    <p class="text"> Here's your playlist for {{selectedSong}}</p>
+    <div class="urlBox">
+      <a class="text" id="url"></a>
+    </div>
+
+    <div class="playerBox">
+      <iframe [src]= "getEmbededURL()" frameborder="0" allowtransparency="true" allow="encrypted-media" width="100%" height="100%"></iframe>
+    </div>
+      <div class="buttonBox">
+        <button class="backButton" (click)="goBack()">Make Another</button>
+      </div>
+    </div>
+</div>

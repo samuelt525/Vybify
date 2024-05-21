@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #121314;
+    color: #ddd;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 8pt;
+	font-weight: 300;
+	overflow: hidden;
+}
+
+.lowertab {
+	position: absolute;
+	box-sizing: border-box;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	bottom: 0px;
+	background-color: #222326;
+	border-top: 1px solid #393b40;
+	overflow: hidden;
+}
+
+.lowertab .leftcontrols {
+	position: absolute;
+	left: 10px;
+	top: 2px;
+	width: 400px;
+	padding: 0px;
+}
+
+.lowertab .leftcontrols .prevbutton {
+	position: absolute;
+	left: 5px;
+
+}
+
+.lowertab .leftcontrols .playbutton {
+	position: absolute;
+	left: 40px;
+}
+
+.lowertab .leftcontrols .nextbutton {
+	position: absolute;
+	left: 75px;
+}
+
+.lowertab .leftcontrols .prevbutton a img,
+.lowertab .leftcontrols .playbutton a img,
+.lowertab .leftcontrols .nextbutton a img {
+	width: 32px;
+	height: 32px;
+}
+
+.lowertab .leftcontrols .volume {
+	position: absolute;
+	left: 120px;
+	top: 7px;
+	width: 80px;
+}
+
+.lowertab .leftcontrols .volume input {
+	width: 100%;
+}
+

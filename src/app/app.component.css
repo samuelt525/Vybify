@@ -1,0 +1,202 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+.header {
+    margin-left: 3%;
+}
+.inputText{
+    display: inline;
+    padding: 3px;
+}
+
+.topmargin {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 40px;
+	width: 100%;
+	background-color: #222326;
+	border-bottom: 1px solid #393b40;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.topmargin .image {
+    position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 220px;
+	box-sizing: border-box;
+	padding: 7px;
+}
+
+.topmargin .loginbox {
+	position: left;
+	right: 0px;
+	top: 0px;
+	padding: 12px;
+	text-align: left;
+}
+.topmargin .userbox {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 12px;
+	text-align: right;
+}
+
+
+.topmargin .titlebox {
+	position: absolute;
+	left: 90px;
+	right: 150px;
+	top: 0px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+
+}
+.sidebar {
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	bottom: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.menuview {
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 220px;
+	background-color: #222326;
+	bottom: 0px;
+}
+
+.menuview .list {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+	bottom: 260px;
+	padding: 0px;
+	overflow: auto;
+}
+
+.menuview .preview {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 260px;
+	background-color: #222326;
+}
+
+.menuview .preview > p {
+	display: block;
+	padding: 5px;
+}
+
+.menuview .preview > p b {
+	display: block;
+	font-weight: 300;
+}
+
+.menuview .preview > p a {
+	display: block;
+	font-size: 7pt;
+}
+
+.menuview .preview responsive-cover {
+	width: 220px;
+	height: 220px;
+	border: 0;
+	outline: 0;
+	border: 1px solid #393b40;
+}
+.padding {
+    margin-left: 3%;
+    padding: 5px;
+}
+.padding .searchbox {
+	position: absolute;
+	left: 800px;
+	top: 200px;
+	width: 220px;
+	box-sizing: border-box;
+	padding: 7px;
+}
+.padding .selectbox {
+	position: absolute;
+	left: 800px;
+	top: 240px;
+	width: 220px;
+	box-sizing: border-box;
+	padding: 7px;
+}
+.padding .searchbox input {
+	border: 0;
+	padding: 5px 10px;
+	border-radius: 20px;
+	background-color: #ddd;
+	width: 100%;
+	outline: none;
+}
+
+.padding .buttonbox{
+    position: absolute;
+	left: 880px;
+	top: 300px;
+}
+.padding .buttonbox .button{
+    padding:5px;
+}
+.spotify{
+	left: 400px;
+	top: 540px;
+	padding: 7px;
+	margin: 5%;
+}
+.spotify .playerBox{
+	background-color: #222326	;
+	position: absolute;
+	left: 20%;
+	right: 15%;
+	top: 20%;
+	bottom: 20%;
+
+	overflow: hidden;
+}
+.spotify .urlBox{
+	position: absolute;
+	left: 910px;
+	bottom: 150px;
+  visibility: hidden;
+}
+.spotify .buttonBox{
+	position: absolute;
+	left: 910px;
+	bottom: 100px;
+}
+.spotify .buttonBox .backButton{
+	padding:5px;
+}
+.spotify .text{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18pt;
+	font-weight: 300;
+	overflow: hidden;
+	text-align: center;
+}
+.logo {
+  text-align: center;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 845px;
+	top: 55px;
+}
