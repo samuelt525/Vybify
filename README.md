@@ -1,5 +1,7 @@
 # Vybify
 
+Project was made in 2020. Transfered from Gitlabs to Github.
+
 This project is intented to provide additional functionality beyond the default Spotify suggestions.
 Specifically, this application will take the name of a provided song and generate a playlist of songs with a similar mood, tempo and key.
 
